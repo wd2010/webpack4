@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "add-module-exports",
+    ["direct-import", ["@material-ui/core", '@material-ui/icons','history']]
+  ],
+  "env": {
+    "development":{
+      "plugins": ["dynamic-import-node"]
+    }
+  }
+}
