@@ -1,17 +1,31 @@
 {
   "presets": [
-    "env",
-    "react",
-    "stage-0"
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage"
+      }
+    ]
   ],
   "plugins": [
-    "transform-runtime",
+    "@babel/plugin-transform-runtime",
     "add-module-exports",
-    ["direct-import", ["@material-ui/core", '@material-ui/icons','history']]
+    [
+      "direct-import",
+      {
+        "modules":[
+          "@material-ui/core",
+          "@material-ui/icons",
+          "history"
+        ]
+      }
+    ]
   ],
   "env": {
-    "development":{
-      "plugins": ["dynamic-import-node"]
+    "development": {
+      "plugins": [
+        "dynamic-import-node"
+      ]
     }
   }
 }

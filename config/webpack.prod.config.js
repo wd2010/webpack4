@@ -48,7 +48,7 @@ const prodConfig = merge(base, {
   },
 
   plugins: [
-    //plugin.clean(),
+    plugin.clean(),
     generateAnalyzer && plugin.analyzer(),
     plugin.inlineManifest(),
     plugin.loadable(),

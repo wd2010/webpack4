@@ -64,7 +64,7 @@ exports.html=()=>{
     filename:'index.html',
     template:path.join(rootPath,'./index.ejs'),
     inject: 'false', //inject: true | 'head' | 'body' | false  ,注入所有的资源到特定的 template 或者 templateContent 中，如果设置为 true 或者 body，所有的 javascript 资源将被放置到 body 元素的底部，'head' 将放置到 head 元素中。
-    /* minify: isDev ? null : {
+     minify: isDev ? null : {
       removeComments: true,//移除HTML中的注释
       collapseWhitespace: true,//删除空白符与换行符
       removeRedundantAttributes: true,
@@ -75,7 +75,7 @@ exports.html=()=>{
       minifyJS: true,
       minifyCSS: true,
       minifyURLs: true,
-    } */
+    }
   })
 };
 

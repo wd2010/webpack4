@@ -8,7 +8,6 @@ const baseConfig = {
   context: path.join(rootPath, "./src"),
   entry: {
     main: "./index.js",
-    Y: "./yy.js"
   },
 
   // watch: true,
