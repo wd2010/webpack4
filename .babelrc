@@ -5,21 +5,16 @@
       {
         "useBuiltIns": "usage"
       }
-    ]
+    ],
+    "@babel/preset-react"
   ],
   "plugins": [
-    "@babel/plugin-transform-runtime",
-    "add-module-exports",
-    [
-      "direct-import",
-      {
-        "modules":[
-          "@material-ui/core",
-          "@material-ui/icons",
-          "history"
-        ]
-      }
-    ]
+    ["@babel/plugin-transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true,
+      "moduleName": "@babel/runtime"
+    }]
   ],
   "env": {
     "development": {
