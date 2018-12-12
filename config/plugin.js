@@ -122,6 +122,10 @@ exports.analyzer=()=>{
   return new BundleAnalyzerPlugin()
 };
 
+exports.loadable=()=>{
+  return new ReactLoadablePlugin({filename: path.join(rootPath,'./dist/loadable.json')})
+}
+
 exports.clean=()=>{
   return new CleanWebpackPlugin(['./dist'],{root: rootPath,})
 };

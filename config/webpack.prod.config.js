@@ -54,7 +54,8 @@ const prodConfig = merge(base, {
     plugin.loadable(),
     plugin.extractCSS(),
     plugin.NamedModulesPlugin(),
-    plugin.NamedChunksPlugin()
+    plugin.NamedChunksPlugin(),
+    plugin.loadable(),
   ].filter(p => p)
 });
 
